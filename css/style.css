@@ -1,0 +1,90 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  min-height: 500px;
+  padding: 10px;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.calculator {
+  background-color: #000000;
+  border: 1px solid rgb(126, 126, 126);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 320px;
+}
+
+#display {
+  background-color: #222;
+  color: #ffffff;
+  border-radius: 5px;
+  padding: 5px;
+  margin-bottom: 20px;
+  min-height: 40px;
+  text-align: right;
+  padding: 15px;
+  font-size: 35px;
+  overflow: hidden;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.top {
+  margin-bottom: 10px;
+}
+
+button {
+  color: #ffffff;
+  background-color: #29292b;
+  border: none;
+  border-radius: 50px;
+  padding: 20px;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+  background-color: hsl(0, 0%, 60%);
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.btn-light {
+  color: #212121;
+  background-color: #A4A4A4;
+}
+
+.btn-light:hover {
+  background-color: hsl(0, 0%, 74%);
+}
+
+.btn-light:active {
+  background-color: hsl(0, 0%, 80%);
+}
+
+.btn-orange {
+  background-color: #fe9e09;
+}
+
+.btn-orange:hover {
+  background-color: hsl(35, 98%, 62%);
+}
+
+.btn-orange:active {
+  background-color: #ffffff;
+  color: #fe9e09;
+}
